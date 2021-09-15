@@ -1,10 +1,10 @@
 # Scrumpoker-online Cheater
 
-#### Scrumpoker-online Estimation Auto Submitter
+## Scrumpoker-online Estimation Auto Submitter
 
 Just start script and wait for others to submit estimations
 
-![variables](/static/2.png)
+![variables](/static/1.png)
 
 
 ## Instalation
