@@ -1,0 +1,33 @@
+{
+  "name": "scrumpoker-online-cheater",
+  "version": "0.0.1",
+  "description": "Scrumpoker-online Estimation Auto Submitter (Scrumpoker-online Cheater)",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "fix": "eslint src/ --ignore-pattern .gitignore --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanoff/scrumpoker-online-cheater.git"
+  },
+  "author": "Dimitry Ivanov <2@ivanoff.org.ua> # curl -A cv ivanoff.org.ua",
+  "keywords": [
+    "scrumpoker-online",
+    "scrumpoker",
+    "cheater",
+    "estimation",
+    "submitter"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-security": "^1.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ws": "^8.2.2"
+  }
+}
