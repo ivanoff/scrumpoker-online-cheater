@@ -1,8 +1,18 @@
-# Scrumpoker-online Cheater
+# Scrumpoker-online Estimation Auto Submitter
 
-## Scrumpoker-online Estimation Auto Submitter
+## aka. Scrumpoker-online Cheater
 
-Just start script and wait for others to submit estimations
+This script automatically submits the most common estimate in scrumpoker-online.org's room.
+
+Just start script and wait for others to submit estimations. Example of output:
+
+```
+John Deer submited 5
+=== WE SUBMIT 5
+Bob submited 100
+Alice submited 100
+=== WE SUBMIT 100
+```
 
 ![variables](/static/1.png)
 

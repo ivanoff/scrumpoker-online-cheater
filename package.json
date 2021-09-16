@@ -1,7 +1,7 @@
 {
   "name": "scrumpoker-online-cheater",
-  "version": "0.0.1",
-  "description": "Scrumpoker-online Estimation Auto Submitter (Scrumpoker-online Cheater)",
+  "version": "1.0.1",
+  "description": "Scrumpoker-online Estimation Auto Submitter (aka. Scrumpoker-online Cheater)",
   "scripts": {
     "start": "node ./src/index.js",
     "fix": "eslint src/ --ignore-pattern .gitignore --fix"
