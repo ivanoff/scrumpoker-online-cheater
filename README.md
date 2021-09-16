@@ -9,7 +9,7 @@ Just start script and wait for others to submit estimations
 
 ## Instalation
 
-```git clone git@github.com:ivanoff/scrumpoker-online-cheater.git```
+```git clone https://github.com/ivanoff/scrumpoker-online-cheater.git```
 
 ```cd scrumpoker-online-cheater```
 
@@ -50,7 +50,7 @@ Press `F12`, and then `F5`
 
 2. Click on url
 
-3. Click om `Messages`
+3. Click on `Messages`
 
 All variables are on the screenshot below
 
