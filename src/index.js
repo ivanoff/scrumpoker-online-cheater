@@ -82,6 +82,7 @@ function messageHandler(originMessage) {
   if (message.match(/"storyPoints":null}/)) {
     console.log('=== RESET ===');
     voites = [];
+    submitedNumber = undefined;
   }
 }
 
