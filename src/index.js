@@ -8,7 +8,7 @@ const {
 const ws = new WebSocket(url);
 
 let step = 0;
-let voites = {};
+let votes = {};
 let developers = {};
 let submitedNumber;
 
@@ -42,11 +42,11 @@ function updateDevelopersList(message) {
 
 function voteHandler({ user, value }) {
   console.log(`${developers[`${user}`]} submited ${value}`);
-  voites[`${user}`] = value;
+  votes[`${user}`] = value;
 
-  const toSubmit = getMostFequentNumber(Object.values(voites));
+  const toSubmit = getMostFequentNumber(Object.values(votes));
 
-  const votesTotal = Object.keys(voites).length;
+  const votesTotal = Object.keys(votes).length;
   const votesNeeded = Math.trunc(Object.keys(developers)/2);
   if (submitedNumber !== toSubmit && votesTotal >= votesNeeded) {
     submitedNumber = toSubmit;
@@ -83,7 +83,7 @@ function messageHandler(originMessage) {
   // clear all estimates
   if (message.match(/"storyPoints":null}/)) {
     console.log('=== RESET ===');
-    voites = [];
+    votes = [];
     submitedNumber = undefined;
   }
 }
