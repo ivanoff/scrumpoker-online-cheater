@@ -46,7 +46,9 @@ function voteHandler({ user, value }) {
 
   const toSubmit = getMostFequentNumber(Object.values(voites));
 
-  if (submitedNumber !== toSubmit) {
+  const votesTotal = Object.keys(voites).length;
+  const votesNeeded = Math.trunc(Object.keys(developers)/2);
+  if (submitedNumber !== toSubmit && votesTotal >= votesNeeded) {
     submitedNumber = toSubmit;
     console.log(`=== WE SUBMIT ${toSubmit}`);
     ws.send(`{"t":"d","d":{"r":${step},"a":"m","b":{"p":"/pokerRooms/${roomNumber}/estimates/${userUid}","d":{"developer":{"displayName":"${displayName}","userUid":"${userUid}"},"updatedAt":{".sv":"timestamp"},"storyPoints":"${toSubmit}"}}}}`);
