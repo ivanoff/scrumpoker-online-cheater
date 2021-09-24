@@ -29,7 +29,7 @@ function getMostFequentNumber(arr) {
 function updateDevelopersList(message) {
   try {
     const data = JSON.parse(message);
-    const { estimates } = data.d?.b?.d || {};
+    const { estimates } = data.d.b.d || {};
     developers = Object.values(estimates).reduce(
       (acc, { developer: { userUid: id, displayName: name } }) => ({ ...acc, [id]: name }),
       {},
