@@ -47,7 +47,7 @@ function voteHandler({ user, value }) {
   const toSubmit = getMostFequentNumber(Object.values(votes));
 
   const votesTotal = Object.keys(votes).length;
-  const votesNeeded = Math.trunc(Object.keys(developers)/2);
+  const votesNeeded = Math.trunc(Object.keys(developers) / 2);
   if (submitedNumber !== toSubmit && votesTotal >= votesNeeded) {
     submitedNumber = toSubmit;
     console.log(`=== WE SUBMIT ${toSubmit}`);
